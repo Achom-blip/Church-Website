@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Sermons - christ Summit Ministries</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">Christ <span class="span"><br> Summit Ministries</span></a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!--hero section-->
+        <section class="sermon-hero">
+            <h1>Watch our sermons</h1>
+            <p>Be insired by the word of God anytime, anywhere.</p>
+        </section>
+
+        <!--featured sermons-->
+        <section class="featured-sermon">
+            <h2>Latest Sermon</h2>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="YouTube video" allow fullscreen></iframe>
+            </div>
+        </section>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+             <button class="filter-btn active" data-filter="sunday">Sunday</button>
+              <button class="filter-btn active" data-filter="midweek"> midweek</button>
+               <button class="filter-btn active" data-filter="Youth"> Youth </button>
+        </div>
+
+        <!--SEARCH BOX-->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search sermons...">
+        </div>
+
+        <!--SERMON LIST-->
+        <section class="sermons">
+            <h2> More Sermons </h2>
+
+            <div class="sermons-container">
+
+                <div class="sermon-card"  data-category="sunday" data-date=" 2026-03-01">
+                    <div class="video-wrapper">
+                        
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/crLPOqWbdYo?si=A4Zyo2rIj87Yo7_K" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                            <h3>Walking in Faith</h3>
+                            <p>Sunday Service</p>
+                        </div>
+                    </div>    
+                </div>
+
+                 <div class="sermon-card"  data-category="sunday" data-date="2026-03-01">
+                    <div class="video-wrapper">
+      
+                        <iframe width="560" height="315"
+                         src="https://www.youtube.com/embed/crLPOqWbdYo?si=wIY2HwNsdqRXXMCZ" 
+                         title="YouTube video player" 
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                            <h3>Power of prayer</h3>
+                            <p>midweek service</p>
+                        </div>
+                    </div>    
+                </div>
+
+                 <div class="sermon-card"  data-category="sunday" data-date="2026-03-01">
+                    <div class="video-wrapper">
+           
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/llYHFVQuJV8?si=JG-6upVMEsOOkVyT"
+                         title="YouTube video player" frameborder="0" 
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                            <h3>Trusting God </h3>
+                            <p>Sunday worship</p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="load-more">
+                <button id="loadMoreBtn">Load More</button>
+                </div>
+
+                <div class="date-filter">
+                    <input type="date" id="dateFilter">
+                </div>
+
+            </div>
+        </section>
+
+        <div class="video-modal" id="videoModal">
+            <span class="close-btn">&times;</span>
+            <iframe id="modalVideo" src="" allowfullscreen></iframe>
+        </div>
+    </body>
+
+    <footer class="footer">
+        <p> @ 2026 Christ Summit Ministries | All Rights Reserved. </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</html>
